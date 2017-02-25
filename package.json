@@ -6,10 +6,8 @@
   "bin": {
     "nails": "nails.js"
   },
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
+    "start": "node ./bin/nails.js",
     "dev": "better-npm-run dev"
   },
   "betterScripts": {
