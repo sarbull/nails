@@ -1,0 +1,43 @@
+{
+  "name": "nails",
+  "version": "0.0.0",
+  "description": "Nails Framework",
+  "main": "bin/nails.js",
+  "bin": {
+    "nails": "nails.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "better-npm-run start"
+  },
+  "betterScripts": {
+    "start": {
+      "command": "nodemon bin/nails.js",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarbull/nails.git"
+  },
+  "keywords": [
+    "node",
+    "nails"
+  ],
+  "author": "Sirbu Nicolae-Cezar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sarbull/nails/issues"
+  },
+  "homepage": "https://github.com/sarbull/nails#readme",
+  "dependencies": {
+    "express": "^4.14.1"
+  },
+  "devDependencies": {
+    "better-npm-run": "0.0.14"
+  }
+}
