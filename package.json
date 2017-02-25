@@ -10,10 +10,10 @@
     "test": "test"
   },
   "scripts": {
-    "start": "better-npm-run start"
+    "dev": "better-npm-run dev"
   },
   "betterScripts": {
-    "start": {
+    "dev": {
       "command": "nodemon bin/nails.js",
       "env": {
         "NODE_ENV": "development"
@@ -35,6 +35,7 @@
   },
   "homepage": "https://github.com/sarbull/nails#readme",
   "dependencies": {
+    "body-parser": "^1.16.1",
     "express": "^4.14.1"
   },
   "devDependencies": {

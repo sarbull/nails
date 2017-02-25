@@ -1,13 +1,13 @@
 const express = require('express'),
   app = express(),
-  routes = require('../app/routes'),
-  config = require('../config/environment');
+  config = require('../config/environment'),
+  application = require('../config/application');
 
 let server;
 
 server = app.listen(config.PORT);
 console.log(`Your server is running on port ${ config.PORT }.`);
 
-app.use('/', routes);
+application(app);
 
 module.exports = server;
